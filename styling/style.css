@@ -89,11 +89,11 @@
 }
 
 .hero h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .hero p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
     .hero-floating-call-btn{
@@ -239,6 +239,117 @@
 #workouts,#pricing{
   margin-top: 100px;
 }
+
+
+footer {
+            padding: 80px 20px 40px;
+            color: #333;
+            font-family: 'Georgia', serif; /* Elegant, artistic font for watercolor feel */
+            position: relative;
+            height: 200px;  
+            
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--secondary);
+            border-top: 2px var(--primary) solid;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .branch {
+            text-align: center;
+        }
+
+        .branch h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary); /* Deep purple accent */
+        }
+
+        .branch p {
+            margin: 8px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .branch a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .branch a:hover {
+            color: var(--primary);
+        }
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+    margin: 30px auto 40px;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px var(--primary) solid;
+}
+
+.social-icons a {
+    color: var(--primary);
+    z-index: 1;
+    font-size: 1.8rem; /* Larger icons */
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-4px) scale(1.1);
+    opacity: 0.8;
+}
+
+
+
+        .copyright {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #555;
+            position: relative;
+            z-index: 1;
+        }
+
+                .whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;  /* Official WhatsApp green */
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 32px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;  /* Darker green on hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
     @media (max-width: 789px) {
       .nav-links {
         position: absolute;
@@ -272,6 +383,8 @@
     #equipment{
   margin: -180px 10px 0px 10px;
 }
+
+
 
     }
 
